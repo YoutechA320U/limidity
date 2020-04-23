@@ -34,7 +34,7 @@ Debian、Raspbian、UbuntuなどDebian系LinuxPCをハードウェアMIDI音源�
 ## インストール方法と使い方
 ※仮想マシン上のUbuntuMATE18.04LTS(amd64)で説明します
 
-1. 何らかの手段でダウンロードした二つのスクリプト[limidity_setup.sh](https://github.com/YoutechA320U/limidity/blob/master/limidity_setup.sh), [limidity.py](https://github.com/YoutechA320U/limidity/blob/master/limidity.py)を適当な場所に置きます
+1. `git clone https://github.com/YoutechA320U/limidity.git`などでこのリポジトリをパソコンの適当な場所に保存します
 
 2. PCのUSBポートにUSB-MIDI機器を1つ接続してください
 
@@ -42,10 +42,12 @@ Debian、Raspbian、UbuntuなどDebian系LinuxPCをハードウェアMIDI音源�
 
 4. 完了したらターミナルから`limidity.py`をスーパーユーザー権限でPython3で一回実行します。これはPCを起動するたびに行ってください。 例:`sudo python3 limidity.py`
 
-5. USB-MIDI-機器からノートオンなどを送るとPCのオーディオ出力から音がでるはずです
+5. USB-MIDI-機器からノートオンなどを送るとPCのオーディオ出力から音がでるはずです。
 
 ## 備考
 扱いやすくするために手動で実行する事を想定していますが自動化してUIなど機能を追加すればスタンドアロンなハードウェアMIDI音源が作れるはずです。
+
+抜き差しの度にUSB-MIDI機器を自動認識するルールが追加されますがOSによっては機能しません。その場合はお手数ですがUSB-MIDI機器を繋いだ状態で使い方の`4`を再度実行してください。
 
 Timidity++の設定ファイルは`/usr/local/share/timidity/timidity.cfg`です。ここを書き換えると各種パラメータを調整できます。内容はデフォルトの`timidity.cfg`や`timidity -h`コマンド、下記参考ページを参照してください
 
