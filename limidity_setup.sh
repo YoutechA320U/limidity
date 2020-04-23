@@ -46,7 +46,7 @@ cd /usr/local/share/timidity/
 #Timidity設定ファイルの生成
 sudo sh -c "echo 'opt iA\nopt Os\nopt --sequencer-ports=1\nopt --realtime-priority=50\nopt B3,7\nopt q0-0\nopt s32kHz\nopt -EFresamp=1\nopt -EFreverb=1\nopt -EFchorus=1\nopt p128a' > /usr/local/share/timidity/timidity.cfg"
 #midiconnect.sh生成
-sudo sh -c "echo 'aconnect 20:0 128:0\naconnect 20:0 129:0\naconnect 20:0 130:0\naconnect 20:0 131:0\naconnect 24:0 128:0\naconnect 24:0 129:0\naconnect 24:0 130:0\naconnect 24:0 131:0' > /usr/local/share/timidity/midiconnect.sh"
+sudo sh -c "echo 'aconnect 20:0 128:0\naconnect 20:0 129:0\naconnect 20:0 130:0\naconnect 20:0 131:0\naconnect 24:0 128:0\naconnect 24:0 129:0\naconnect 24:0 130:0\naconnect 24:0 131:0\naconnect 28:0 128:0\naconnect 28:0 129:0\naconnect 28:0 130:0\naconnect 28:0 131:0' > /usr/local/share/timidity/midiconnect.sh"
 sudo chmod +x /usr/local/bin/*
 #USB-MIDI機器を自動接続するルールを追加
 rm *.rules
