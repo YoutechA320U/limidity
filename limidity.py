@@ -16,7 +16,7 @@ loginuser=str(subprocess.check_output("sudo who |awk '{print $1}'" ,shell=True).
 path="/usr/share/sounds/sf2/" #サウンドフォントのパスを入力
 sf2="FluidR3_GM.sf2" #サウンドフォントの名前を入力
 
-time.sleep(3)
+#time.sleep(3)
 subprocess.call('sudo aconnect -x', shell=True)
 subprocess.call('sudo killall timidity', shell=True)
 time.sleep(1)
