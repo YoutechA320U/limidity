@@ -49,6 +49,7 @@ sudo sh -c "echo 'opt iA\nopt Os\nopt --sequencer-ports=1\nopt --realtime-priori
 sudo sh -c "echo 'aconnect 20:0 128:0\naconnect 20:0 129:0\naconnect 20:0 130:0\naconnect 20:0 131:0\naconnect 24:0 128:0\naconnect 24:0 129:0\naconnect 24:0 130:0\naconnect 24:0 131:0' > /usr/local/share/timidity/midiconnect.sh"
 sudo chmod +x /usr/local/bin/*
 #USB-MIDI機器を自動接続するルールを追加
+rm *.rules
 wget https://raw.githubusercontent.com/YoutechA320U/limidity/master/90-usbmidiconnect.rules
 sudo cp /usr/local/share/timidity/90-usbmidiconnect.rules /etc/udev/rules.d/
 
