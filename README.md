@@ -27,9 +27,9 @@ Debian、Raspbian、UbuntuなどDebian系LinuxPCをハードウェアMIDI音源�
 |部品名|備考|数量|
 |:---|:--:|---:|
 |PC|RaspberryPi 2Bなど(※最低ライン)|1|
-|OS|Debian系LinuxOS|お好み|
+|OS|Debian系LinuxOS||
 |USB-MIDIインターフェース、USB-MIDIキーボードなどノートオンメッセージを送れるUSB-MIDI機器|激安品は避けた方が吉|1|
-|(お好みで)サウンドフォント|搭載メモリの半分程度まで|お好み|
+|(お好みで)サウンドフォント|搭載メモリの半分程度まで||
 
 ## インストール方法と使い方
 ※仮想マシン上のUbuntuMATE18.04LTS(amd64)で説明します
